@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--violet-clair);
+	padding: 24px 20px 16px 20px;
+}
+
+.none {
+	display: none;
+}
+
+li {
+	list-style: none;
+}
+
+.Hero {
+	background-color: var(--violet-clair);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.H1hero {
+	color: #ffffff;
+	margin: 0;
+	width: 100%;
+}
+
+.Phero {
+	color: #ffffff;
+	width: 80%;
+}
+
+.ordonerhero {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 12px;
+	padding: 24px;
+}
+
+.test {
+	background: center / cover url("../asset/vaqueiphone.png") no-repeat;
+	width: 100vw;
+	height: 120px;
+	background-color: var(--violet-clair);
+}
+
+@media screen and (min-width: 768px) {
+	.noneafter {
+		display: none;
+	}
+
+	.none {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 32px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	header {
+		padding: 32px 28px 20px 28px;
+	}
+}

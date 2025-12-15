@@ -1,0 +1,122 @@
+:root {
+	--violet-clair: #9260e8;
+	--blanc-blanc: #ffffff;
+	--bleu-clair: #48d0b7;
+	--maron-maron: #3a3a3a;
+	--rose-rose: #cf468d;
+	--gris-gris: #a2a2a2;
+}
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
+/*
+    font-family: "ADLaM Display", system-ui;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*
+	font-family: "Poppins", sans-serif;
+*/
+h1 {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 700;
+	letter-spacing: -0.55px;
+}
+
+h2 {
+	font-family: "Poppins", sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: -0.37px;
+}
+
+h3 {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: -0.25px;
+}
+
+h4 {
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: -0.18px;
+}
+
+h5 {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: -0.18px;
+}
+
+h6 {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: -0.18px;
+}
+
+.hbody {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+
+.logo {
+	font-family: "ADLaM Display", system-ui;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 0px;
+	color: var(--blanc-blanc);
+}
+
+a {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--blanc-blanc);
+	text-decoration: none;
+}
+
+.btnprimary {
+	border: none;
+	border-radius: 999px;
+	padding: 12px 24px;
+	background-color: var(--blanc-blanc);
+	color: #523682;
+}
+
+.btnprimary:hover {
+	border: 1px solid;
+	border-color: var(--blanc-blanc);
+	color: "ffffff";
+	padding: 11px 23px;
+	background-color: var(--violet-clair);
+}
+
+.btnprimary:active {
+	opacity: 0.25;
+	background-color: var(--violet-clair);
+	color: #4a3a64;
+}
+
+.btnscondry {
+	border: none;
+	border-radius: 999px;
+	padding: 12px 24px;
+	background-color: var(--bleu-clair);
+	color: #ffffff;
+}
+
+.btnscondry:hover {
+	border: 1px solid;
+	border-color: var(--blanc-blanc);
+	padding: 11px 23px;
+}
+
+.btnscondry::after {
+	opacity: 0.25;
+	background-color: #53988f;
+	color: #3a6064;
+}

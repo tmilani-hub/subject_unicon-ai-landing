@@ -6,10 +6,20 @@
 	--rose-rose: #cf468d;
 	--gris-gris: #a2a2a2;
 }
+
+.rouge {
+	color: var(--rose-rose);
+}
+
+.gris {
+	color: rgb(43, 43, 43);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
 /*
     font-family: "ADLaM Display", system-ui;
 */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*
 	font-family: "Poppins", sans-serif;
@@ -63,20 +73,41 @@ h6 {
 	letter-spacing: 0px;
 }
 
-.logo {
-	font-family: "ADLaM Display", system-ui;
-	font-size: 24px;
-	font-weight: 700;
-	letter-spacing: 0px;
-	color: var(--blanc-blanc);
-}
-
 a {
 	font-family: "Poppins", sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	color: var(--blanc-blanc);
 	text-decoration: none;
+}
+
+.grostitre {
+	font-family: "Poppins", sans-serif;
+	font-size: 32px;
+	font-weight: 800;
+	color: var(--blanc-blanc);
+	margin: 0;
+}
+
+.titre {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	color: var(--maron-maron);
+}
+
+.soustitre {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	color: #565656;
+}
+
+.titrefooter {
+	font-size: 16px;
+	font-weight: 800;
+	font-family: "Poppins", sans-serif;
+	color: rgba(58, 58, 58, 1);
 }
 
 .btnprimary {
@@ -119,4 +150,28 @@ a {
 	opacity: 0.25;
 	background-color: #53988f;
 	color: #3a6064;
+}
+
+.iptprimary {
+	border-radius: 4px;
+	padding: 5px 7px;
+	border: none;
+}
+
+.iptprimary:focus {
+	border: 2px solid;
+	border-color: var(--violet-clair);
+}
+
+.iptprimary:invalid {
+	border: 2px solid;
+	border-color: var(--rose-rose);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 8px;
 }

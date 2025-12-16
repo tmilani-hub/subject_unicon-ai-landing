@@ -19,7 +19,7 @@ li {
 	list-style: none;
 }
 
-.Hero {
+#Hero {
 	background-color: var(--violet-clair);
 	display: flex;
 	align-items: center;
@@ -43,7 +43,7 @@ li {
 	align-items: start;
 	justify-content: center;
 	gap: 12px;
-	padding: 24px;
+	padding: 24px 20px;
 }
 
 .test {
@@ -51,6 +51,80 @@ li {
 	width: 100vw;
 	height: 120px;
 	background-color: var(--violet-clair);
+}
+
+#avantages {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	padding: 30px;
+}
+
+.avan {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 12px;
+}
+
+#fonctionnalités {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	margin: 48px 24px;
+}
+
+.ftc {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+}
+
+.fonction {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 12px;
+}
+
+.Fimg {
+	width: 90%;
+}
+
+#démo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	background: linear-gradient(
+		90deg,
+		rgba(82, 54, 130, 1) 25%,
+		rgba(96, 98, 232, 1) 100%
+	);
+	padding: 20px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.contacteus {
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+	justify-content: center;
+	gap: 10px;
+}
+
+#email {
+	width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -65,10 +139,70 @@ li {
 		justify-content: center;
 		gap: 32px;
 	}
+
+	.test {
+		background: center / cover url("../asset/vaquetablet.png") no-repeat;
+		width: 100vw;
+		height: 120px;
+		background-color: var(--violet-clair);
+	}
+
+	.licorn {
+		width: 30%;
+	}
+
+	#Hero {
+		padding-right: 40px;
+	}
+
+	#avantages {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 40px;
+	}
+
+	#fonctionnalités {
+		gap: 45px;
+	}
+
+	.ftc {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 24px;
+	}
+
+	.Fimg {
+		width: 40%;
+	}
+
+	#fonction22 {
+		flex-direction: row-reverse;
+	}
 }
 
 @media screen and (min-width: 1024px) {
 	header {
 		padding: 32px 28px 20px 28px;
+	}
+
+	.test {
+		background: center / cover url("../asset/vaguedesktop.png") no-repeat;
+		width: 100vw;
+		height: 120px;
+		background-color: var(--violet-clair);
+	}
+
+	#avantages {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.fonction {
+		width: 45%;
+	}
+
+	.Fimg {
+		width: 35%;
 	}
 }

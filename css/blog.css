@@ -57,52 +57,6 @@ li {
 	background-color: var(--violet-clair);
 }
 
-#avantages {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
-	padding: 30px;
-}
-
-.avan {
-	display: flex;
-	flex-direction: column;
-	align-items: start;
-	justify-content: center;
-	gap: 12px;
-}
-
-#fonctionnalités {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 24px;
-	margin: 48px 24px;
-}
-
-.ftc {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 12px;
-}
-
-.fonction {
-	display: flex;
-	flex-direction: column;
-	align-items: start;
-	justify-content: center;
-	gap: 12px;
-}
-
-.Fimg {
-	width: 65%;
-}
-
 #démo {
 	display: flex;
 	flex-direction: column;
@@ -159,6 +113,113 @@ footer {
 	width: 100%;
 }
 
+/* spéciale blog \/ */
+
+#Blog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	padding: 24px 48px;
+	color: rgba(58, 58, 58, 1);
+}
+
+#toutlesblog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+}
+
+.log {
+	padding: 24px 36px;
+	border-radius: 12px;
+	color: rgba(30, 30, 30, 1);
+	width: 100%;
+	height: 100%;
+}
+
+#back1 {
+	background: center / cover url(../asset/back1.png) no-repeat;
+}
+#back2 {
+	background: center / cover url(../asset/back2.png) no-repeat;
+}
+#back3 {
+	background: center / cover url(../asset/back3.png) no-repeat;
+}
+#back4 {
+	background: center / cover url(../asset/back4.png) no-repeat;
+}
+#back5 {
+	background: center / cover url(../asset/back5.png) no-repeat;
+}
+
+.info {
+	padding: 12px;
+	border-radius: 8px;
+	background-color: var(--blanc-blanc);
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 12px;
+}
+
+.ChangementDirection {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	color: rgba(86, 86, 86, 1);
+}
+
+#Testimonial {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	background-color: rgba(146, 96, 232, 1);
+	padding: 24px;
+}
+
+#testi1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	width: 100%;
+}
+
+#VaEnHaut {
+	display: flex;
+	align-items: start;
+}
+
+.titreTestimonial {
+	width: 50%;
+	text-align: center;
+}
+
+#testi2 {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 24px;
+	color: #ffffff;
+	width: 100%;
+}
+
+.Timg {
+	width: 90px;
+	height: 90px;
+	border-radius: 9999px;
+	object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
 	.noneafter {
 		display: none;
@@ -187,35 +248,26 @@ footer {
 		padding-right: 40px;
 	}
 
-	#avantages {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		gap: 40px;
-	}
-
-	#fonctionnalités {
-		gap: 45px;
-	}
-
-	.ftc {
-		flex-direction: row;
-		align-items: start;
-		justify-content: space-between;
-		gap: 24px;
-	}
-
-	.Fimg {
-		width: 35%;
-	}
-
-	#fonction22 {
-		flex-direction: row-reverse;
-	}
-
 	#deslient {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
+	}
+
+	/* spéciale blog \/ */
+
+	#toutlesblog {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 48px;
+	}
+
+	#Testimonial {
+		padding: 48px 64px;
+	}
+
+	#testi2 {
+		width: 80%;
 	}
 }
 
@@ -229,19 +281,6 @@ footer {
 		width: 100vw;
 		height: 120px;
 		background-color: var(--violet-clair);
-	}
-
-	#avantages {
-		display: flex;
-		flex-direction: row;
-	}
-
-	.fonction {
-		width: 45%;
-	}
-
-	.Fimg {
-		width: 35%;
 	}
 
 	.None {
@@ -272,5 +311,20 @@ footer {
 
 	footer {
 		padding: 24px 36px;
+	}
+
+	/* spéciale blog \/ */
+
+	#toutlesblog {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	#testi1 {
+		width: 70%;
+	}
+
+	#testi2 {
+		width: 50%;
 	}
 }

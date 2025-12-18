@@ -19,6 +19,10 @@
 	color: rgba(162, 162, 162, 1);
 }
 
+.foncer {
+	color: rgba(58, 58, 58, 1);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
 /*
     font-family: "ADLaM Display", system-ui;
@@ -58,6 +62,10 @@ h4 {
 
 .F500 {
 	font-weight: 500;
+}
+
+.F600 {
+	font-weight: 600;
 }
 
 .F700 {
@@ -199,10 +207,26 @@ a {
 	border-color: var(--rose-rose);
 }
 
-form {
+.form {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
 	justify-content: center;
 	gap: 8px;
+}
+
+.input {
+	background-color: #523682;
+	accent-color: white;
+	width: 24px;
+	height: 24px;
+}
+
+textarea {
+	color: rgba(162, 162, 162, 1);
+	resize: none;
+	border: none;
+	border-radius: 4px;
+	width: 100%;
+	padding: 5px 7px;
 }

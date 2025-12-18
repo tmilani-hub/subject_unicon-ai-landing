@@ -113,130 +113,60 @@ footer {
 	width: 100%;
 }
 
-/* spéciale blog \/ */
+/* spéciale contact \/ */
 
-#Blog {
+#CONTACT {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	gap: 24px;
-	padding: 24px 48px;
-	color: rgba(58, 58, 58, 1);
-}
-
-#toutlesblog {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 24px;
-}
-
-.log {
-	padding: 24px 36px;
-	border-radius: 12px;
-	color: rgba(30, 30, 30, 1);
-	width: 100%;
-	height: 100%;
-}
-
-#back1 {
-	background: center / cover url(../asset/back1.png) no-repeat;
-}
-#back2 {
-	background: center / cover url(../asset/back2.png) no-repeat;
-}
-#back3 {
-	background: center / cover url(../asset/back3.png) no-repeat;
-}
-#back4 {
-	background: center / cover url(../asset/back4.png) no-repeat;
-}
-#back5 {
-	background: center / cover url(../asset/back5.png) no-repeat;
-}
-
-.info {
-	padding: 12px;
-	border-radius: 8px;
-	background-color: var(--blanc-blanc);
-	display: flex;
-	flex-direction: column;
-	align-items: start;
 	justify-content: center;
 	gap: 12px;
-}
-
-.ChangementDirection {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	width: 100%;
-	color: rgba(86, 86, 86, 1);
-}
-
-#Testimonial {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 24px;
-	background-color: rgba(146, 96, 232, 1);
-	padding: 24px;
-}
-
-#testi1 {
-	display: grid;
-	grid-template-areas:
-		"D1 D2 T2"
-		"T1 D2 T2"
-		"T1 D2 D3";
-	align-items: center;
-	justify-items: center;
-	gap: 24px;
-}
-
-#lol1 {
-	grid-area: D1;
-}
-
-#lol2 {
-	grid-area: D2;
-	width: 100%;
-}
-
-#lol3 {
-	grid-area: D3;
-}
-
-#T1 {
-	grid-area: T1;
-}
-
-#T2 {
-	grid-area: T2;
-}
-
-.titreTestimonial {
-	width: 50%;
 	text-align: center;
 }
 
-#testi2 {
+#formulaire {
+	background: linear-gradient(270deg, #6062e8 0%, #523682 100%);
+	width: 100%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: start;
+	justify-content: center;
+	padding: 24px;
+	color: white;
+	gap: 42px;
+}
+
+.infoformulaire {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	width: 100%;
 	gap: 24px;
-	color: #ffffff;
+}
+
+.wtf {
 	width: 100%;
 }
 
-.Timg {
-	width: 90px;
-	height: 90px;
-	border-radius: 9999px;
-	object-fit: cover;
+.extt {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: start;
+	width: 100%;
+	gap: 48px;
+}
+
+.cent {
+	width: 100%;
+}
+
+.newletter {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -272,22 +202,7 @@ footer {
 		grid-template-rows: 1fr;
 	}
 
-	/* spéciale blog \/ */
-
-	#toutlesblog {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		gap: 48px;
-	}
-
-	#Testimonial {
-		padding: 48px 64px;
-	}
-
-	#testi2 {
-		width: 80%;
-	}
+	/* spéciale contact \/ */
 }
 
 @media screen and (min-width: 1024px) {
@@ -332,18 +247,5 @@ footer {
 		padding: 24px 36px;
 	}
 
-	/* spéciale blog \/ */
-
-	#toutlesblog {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-	}
-
-	#testi1 {
-		width: 70%;
-	}
-
-	#testi2 {
-		width: 50%;
-	}
+	/* spéciale contact \/ */
 }
